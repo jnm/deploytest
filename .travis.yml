@@ -6,12 +6,12 @@ install:
 script: python --version
 deploy:
   provider: heroku
-  api_key:
-    secure: ZHToiCX0wNvZK+u2imXlneSmoGcCmeL2XVk7Vz645uE1wsrwRJfOcobuCqMUA8jcTNWtz37cBdLM6M4/z5Uu6CmAJaaXbOPIHKhrxfHG5oISUQJ9xvHu+JeP0qtuEXTj/ahlxIfPBnb1nun5c1hGz3pr1iur1rdsodsPSp4hMbA=
-  app:
-    master: yolped-1
+    api_key:
+      secure: ZHToiCX0wNvZK+u2imXlneSmoGcCmeL2XVk7Vz645uE1wsrwRJfOcobuCqMUA8jcTNWtz37cBdLM6M4/z5Uu6CmAJaaXbOPIHKhrxfHG5oISUQJ9xvHu+JeP0qtuEXTj/ahlxIfPBnb1nun5c1hGz3pr1iur1rdsodsPSp4hMbA=
+    app:
+      master: yolped-uno
   provider: heroku
-  api_key:
-    secure: ZHToiCX0wNvZK+u2imXlneSmoGcCmeL2XVk7Vz645uE1wsrwRJfOcobuCqMUA8jcTNWtz37cBdLM6M4/z5Uu6CmAJaaXbOPIHKhrxfHG5oISUQJ9xvHu+JeP0qtuEXTj/ahlxIfPBnb1nun5c1hGz3pr1iur1rdsodsPSp4hMbA=
-  app:
-    master: yolped-2
+    api_key:
+      secure: ZHToiCX0wNvZK+u2imXlneSmoGcCmeL2XVk7Vz645uE1wsrwRJfOcobuCqMUA8jcTNWtz37cBdLM6M4/z5Uu6CmAJaaXbOPIHKhrxfHG5oISUQJ9xvHu+JeP0qtuEXTj/ahlxIfPBnb1nun5c1hGz3pr1iur1rdsodsPSp4hMbA=
+    app:
+      master: yolped-dos
