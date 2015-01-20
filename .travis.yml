@@ -4,14 +4,11 @@ python:
 install:
 - pip --version
 script: python --version
-deploy:
-  - provider: heroku
-    api_key:
-      secure: ZHToiCX0wNvZK+u2imXlneSmoGcCmeL2XVk7Vz645uE1wsrwRJfOcobuCqMUA8jcTNWtz37cBdLM6M4/z5Uu6CmAJaaXbOPIHKhrxfHG5oISUQJ9xvHu+JeP0qtuEXTj/ahlxIfPBnb1nun5c1hGz3pr1iur1rdsodsPSp4hMbA=
-    app:
-      master: yolped-uno
-  - provider: heroku
-    api_key:
-      secure: ZHToiCX0wNvZK+u2imXlneSmoGcCmeL2XVk7Vz645uE1wsrwRJfOcobuCqMUA8jcTNWtz37cBdLM6M4/z5Uu6CmAJaaXbOPIHKhrxfHG5oISUQJ9xvHu+JeP0qtuEXTj/ahlxIfPBnb1nun5c1hGz3pr1iur1rdsodsPSp4hMbA=
-    app:
-      master: yolped-dos
+after_success:
+#  - chmod 600 .travis/deploybot_key.pem # this key should have push access
+  - ssh-add .travis/deploybot_key.pem
+  - echo 'OH HEY, let us fail!'
+  - test 1 == 2
+  - echo 'OH NO, why are we here?'
+#  - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
+#  - git push deploy
